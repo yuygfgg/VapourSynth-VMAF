@@ -33,7 +33,7 @@ if host_machine.cpu_family().startswith('x86') and gcc_syntax
   add_project_arguments('-mfpmath=sse', '-msse2', language: 'cpp')
 endif
 
-shared_module('vmaf', sources,
+shared_module('vs_vmaf', sources,
   dependencies: deps,
   install: true,
   install_dir: install_dir,
